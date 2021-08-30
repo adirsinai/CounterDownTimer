@@ -17,9 +17,13 @@ function countdown() {
 
   console.log(days, hours, minutes, seconds);
   daysEl.textContent = days;
-  hoursEl.textContent = hours;
-  minsEl.textContent = minutes;
-  secondsEl.textContent = seconds;
+  hoursEl.textContent = formatTime(hours);
+  minsEl.textContent = formatTime(minutes);
+  secondsEl.textContent = formatTime(seconds);
+}
+
+function formatTime(time) {
+  return time < 10 ? `0${time}` : time;
 }
 
 //init call
