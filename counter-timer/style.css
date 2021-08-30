@@ -24,7 +24,8 @@ h1 {
 
 .countdown-container {
   display: flex;
-  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .big-text {
